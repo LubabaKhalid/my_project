@@ -1,0 +1,27 @@
+/* Menu bar styles */
+ul.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+
+ul.menu-bar li {
+    float: left;
+}
+
+ul.menu-bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:white;
+   /* line-height: 20px;*/
+}
+
+ul.menu-bar li a:hover {
+    background-color:red;
+}
