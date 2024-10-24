@@ -1,4 +1,17 @@
+.small-icon {
+    font-size: 10px; /* Adjust size as needed */
+}
+
 /* Menu bar styles */
+.center-image {
+            display: block;
+            margin: 0 auto;
+            width: 100%; /* Adjust the width as needed */
+        }
+        .w3-card {
+            margin: left; /* Center the card on the page */
+            max-width: 410px; /* Set a max width for the card */
+        }
 ul.menu-bar {
     list-style-type: none;
     margin: 0;
@@ -24,4 +37,34 @@ ul.menu-bar li a {
 
 ul.menu-bar li a:hover {
     background-color:red;
+}
+
+/* new data */
+.menu-bar {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the menu items */
+    background-color: #f1f1f1; /* Background color for the menu */
+}
+
+.menu-bar li {
+    margin: 10px; /* Space between menu items */
+}
+
+.menu-bar a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding around the links */
+    color: black; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.menu-bar a:hover {
+    background-color: #ddd; /* Change background on hover */
+}
+
+.fa {
+    margin-right: 5px; /* Space between icon and text */
 }
