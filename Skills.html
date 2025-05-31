@@ -1,93 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif; /* Clean font */
-            margin: 0;
-            padding: 20px; /* Padding around the body */
-            background-color: #f8f8f8; /* Light background color */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f4f6f8;
+      font-family: 'Poppins', sans-serif;
+    }
 
-        .container {
-            
-            max-width: 1400px; /* Set a max width for the container */
-            margin: right; /* Center the container */
-            background-color: #fff; /* White background for the container */
-            padding: 40px; /* Padding inside the container */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
 
-    
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #333;
+    }
 
-        h1 {
-            font-size: 30px; /* Size of the heading */
-            margin-bottom: 40px; /* Space below the heading */
-            text-align: left; /* Align the heading to the left */
-            padding-left:50px;
-        }
-        p{
-            font-size:15px;
-            margin-left:30px;
-            padding-left:50px;
-        }
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
 
-        ol {
-            list-style-position: inside; /* Adjusts list item style */
-            padding-left: 0; /* Remove default padding */
-        }
+    .hobby-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        li {
-            font-size: 18px; /* Font size for list items */
-            margin-bottom: 10px; /* Space between list items */
-            padding-left: 50px; /* Add some left padding */
-        }
-    </style>
+    .hobby-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .hobby-card h2 {
+      font-size: 22px;
+      color: #0066cc;
+      margin-bottom: 12px;
+    }
+
+    .hobby-card p {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .hobby-card h2 {
+        font-size: 20px;
+      }
+
+      .hobby-card p {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-
+  <div class="container">
     <h1>Hobbies</h1>
-<ol type="1">
-    <li>Cricket</li>
-    <p> A dynamic team sport that combines strategy and athleticism, fostering camaraderie and competition.</p>
-    <br>
-    <li>Painting</li>
-    <p> An expressive art form that allows for creativity and relaxation through color and technique</p>
-    <br>
-    <li>Outing</li>
-    <p> Enjoying adventures and experiences outdoors, exploring new places and connecting with nature.</p>
-    <br>
-    <li>listening to Music</li>
-    <p>Listening to music is a soothing escape that enhances moods, sparks creativity, and connects us to emotions and memories across diverse genres.</p>
-    <br>
-    <li>Sleep</li>
-    <p> A vital and rejuvenating activity that supports overall health and well-being.</p>
-    <br>
-    <li>Esports</li>
-    <p>Engaging in competitive gaming through mobile games and classic board games like Ludo, where strategy and skill come together for fun and rivalry</p>
+    <div class="hobby-grid">
 
-</ol>
+      <div class="hobby-card">
+        <h2>Cricket</h2>
+        <p>A dynamic team sport that combines strategy and athleticism, fostering camaraderie and competition.</p>
+      </div>
 
+      <div class="hobby-card">
+        <h2>Painting</h2>
+        <p>An expressive art form that allows for creativity and relaxation through color and technique.</p>
+      </div>
+
+      <div class="hobby-card">
+        <h2>Outing</h2>
+        <p>Enjoying adventures and experiences outdoors, exploring new places and connecting with nature.</p>
+      </div>
+
+      <div class="hobby-card">
+        <h2>Listening to Music</h2>
+        <p>Listening to music is a soothing escape that enhances moods, sparks creativity, and connects us to emotions and memories across diverse genres.</p>
+      </div>
+
+      <div class="hobby-card">
+        <h2>Sleep</h2>
+        <p>A vital and rejuvenating activity that supports overall health and well-being.</p>
+      </div>
+
+      <div class="hobby-card">
+        <h2>Esports</h2>
+        <p>Engaging in competitive gaming through mobile games and classic board games like Ludo, where strategy and skill come together for fun and rivalry.</p>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

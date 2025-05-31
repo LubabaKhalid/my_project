@@ -1,151 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lubaba Khalid - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
-        .container {
-            display: flex;
-            justify-content: space-evenly; /* Space between items */
-            align-items: flex-start; /* Align items at the start */
-            background-color: #fff; /* White background for the container */
-            padding: 5px; /* Padding inside the container */
-            border-radius: 0px; /* Rounded corners */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-
-       
-        .text {
-            margin-right: 100px; /* Space between the text and image */
-            padding:0
-        }
-  
-        img {
-            max-width: 250px; /* Limit the image width */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px; /* Rounded corners for the image */
-            margin-right: 50;
-            margin-left: 200;
-        }
-  
-        .box {
-            margin-bottom: 10px; /* Space between boxes */
-            padding-left: 20px; /* Left padding for each box */
-        }
-        .nav {
-            display: flex; /* Use flexbox for side-by-side layout */
-            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-            gap: 20px; /* Space between items */
-        }
-
-        .nav-item {
-            flex: 1; /* Each item takes equal space */
-            min-width: 130px; /* Minimum width for items */
-        }
-
-        a {
-            text-decoration: none; /* Remove underline from links */
-            color: #333; /* Text color */
-            display: flex; /* Align items in a row */
-            align-items: center; /* Center items vertically */
-            padding: 5px; /* Padding around links */
-            border: 1px solid #ccc; /* Border for the link */
-            border-radius: 4px; /* Rounded corners for the link */
-            transition: background-color 0.3s; /* Smooth background transition */
-        }
-
-        a:hover {
-            background-color: #e0e0e0; /* Change background on hover */
-        }
-
-        .material-icons {
-            margin-right: 10px; /* Space between icon and text */
-            font-size: 20px; /* Icon size */
-        }
-        h2 {
-            text-align: center; /* Centers the heading */
-        }
-        .image-container {
-          position: relative; /* To position the name */
-          margin-right: 45px; /* Space between image and text */
-      }
-      h4 {
-        position: relative; /* Positioning it relative to the image */
-        bottom: 0px; /* Distance from the bottom of the image */
-        left: 80%; /* Center it horizontally */
-        transform: translateX(-50%); /* Adjust to center it */
-        background-color: rgba(255, 255, 255, 0.7); /* Optional: Background for better visibility */
-        padding: 5px; /* Optional: Padding around the text */
-        border-radius: 10px; /* Optional: Rounded corners for the name box */
+  <style>
+    * {
+      box-sizing: border-box;
     }
-        p{
-          margin-bottom: 10px;
-          font-size:15px;
-        }
 
-         
-    </style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f4f8;
+      color: #333;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px 20px;
+    }
+
+    .nav-item {
+      margin: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-radius: 30px;
+      background-color: #f0f0f0;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    a:hover {
+      background-color: #d1e8ff;
+      color: #0056b3;
+    }
+
+    .material-icons {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      gap: 40px;
+      background-color: #ffffff;
+      margin: 40px auto;
+      border-radius: 15px;
+      max-width: 1100px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .image-container {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h4 {
+      margin-top: 15px;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.05);
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 12px;
+    }
+
+    .text {
+      flex: 2;
+      max-width: 600px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #004080;
+      border-bottom: 3px solid #004080;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .text {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="nav">
-        <div class="nav-item">
-            <a href="file:///C:/Users/PMLS/Desktop/my_project/index.html">
-                <i class="material-icons">info</i>
-                Home
-            </a>
-        </div>
+  <!-- Navigation -->
+  <div class="nav">
+    <div class="nav-item">
+      <a href="index.html"><i class="material-icons">info</i>Home</a>
+    </div>
+    <div class="nav-item">
+      <a href="Courses.html"><i class="material-icons">book</i>Courses</a>
+    </div>
+    <div class="nav-item">
+      <a href="Languages.html"><i class="material-icons">language</i>Languages</a>
+    </div>
+    <div class="nav-item">
+      <a href="Contact.html"><i class="material-icons">contact_mail</i>Contact</a>
+    </div>
+    <div class="nav-item">
+      <a href="Skills.html"><i class="material-icons">star</i>Hobbies</a>
+    </div>
+  </div>
 
-        <div class="nav-item">
-            <a href="file:///C:/Users/PMLS/Desktop/my_project/Courses.html">
-                <i class="material-icons">book</i>
-                Courses
-            </a>
-        </div>
-        <div class="nav-item">
-            <a href="file:///C:/Users/PMLS/Desktop/my_project/Languages.html">
-                <i class="material-icons">language</i>
-                Languages
-            </a>
-        </div>
-        <div class="nav-item">
-            <a href="file:///C:/Users/PMLS/Desktop/my_project/Contact.html">
-                <i class="material-icons">contact_mail</i>
-                Contact
-            </a>
-        </div>
-        
-        <div class="nav-item">
-            <a href="file:///C:/Users/PMLS/Desktop/my_project/Skills.html">
-                <i class="material-icons">star</i>
-                Hobbies
-            </a>
-        </div>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="image-container">
+      <img src="C:\Users\PMLS\Desktop\my_project\WhatsApp Image 2024-10-20 at 18.16.00.jpeg" alt="Lubaba Khalid" />
+      <h4><b>Lubaba Khalid</b></h4>
     </div>
-</div>
-<div class="w3-container">
-    <div class="container">
-        <div class="image-container">
-            <img src="C:\Users\PMLS\Desktop\website\WhatsApp Image 2024-10-20 at 18.16.00.jpeg" alt="Lubaba">
-            <h4><b>Lubaba Khalid</b></h4>
-        </div>
-        <div class="text">
-            <h2><b>About me</b></h2>
-            <p>Hello! I’m Lubaba Khalid, a passionate Data Science student at the University of the Punjab in Lahore, Pakistan. I began my educational journey in a government school, where I developed a strong foundation in mathematics and science. I completed my Intermediate in Computer Science (ICS) at a government college, where I discovered my fascination for data analysis and programming.</p>
-            <p>Currently, I am honing my skills in data science, learning to extract insights and drive decision-making through the power of data. I enjoy tackling complex problems and am excited about the endless possibilities within this field.</p>
-            <p>In my spare time, I love exploring new technologies, working on projects, and engaging with the data science community. I’m eager to connect with like-minded individuals and collaborate on innovative solutions that make a difference.</p>
-        </div>
+
+    <div class="text">
+      <h2><b>About Me</b></h2>
+      <p>Hello! I’m Lubaba Khalid, a passionate Data Science student at the University of the Punjab in Lahore, Pakistan. I began my educational journey in a government school, where I developed a strong foundation in mathematics and science. I completed my Intermediate in Computer Science (ICS) at a government college, where I discovered my fascination for data analysis and programming.</p>
+      <p>Currently, I am honing my skills in data science, learning to extract insights and drive decision-making through the power of data. I enjoy tackling complex problems and am excited about the endless possibilities within this field.</p>
+      <p>In my spare time, I love exploring new technologies, working on projects, and engaging with the data science community. I’m eager to connect with like-minded individuals and collaborate on innovative solutions that make a difference.</p>
     </div>
-</div>
+  </div>
 
 </body>
 </html>

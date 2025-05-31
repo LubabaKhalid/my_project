@@ -1,105 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif; /* Use a clean font */
-            margin: 0;
-            padding: 5px; /* Add padding to the body */
-            background-color: #f8f8f8; /* Light background color */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #dfe9f3 0%, #ffffff 100%);
+      color: #333;
+    }
 
-        .container {
-            display: flex;
-            justify-content: space-evenly; /* Space between items */
-            align-items: flex-start; /* Align items at the start */
-            background-color: #fff; /* White background for the container */
-            padding: 25px; /* Padding inside the container */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
 
-        .text {
-            margin-right: 0px; /* Space between the text and image */
-            padding:0
-        }
+    .text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 20px;
+    }
 
-        img {
-            max-width: 250px; /* Limit the image width */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px; /* Rounded corners for the image */
-            margin: 0;
-        }
+    .box {
+      margin-bottom: 20px;
+    }
 
-        .box {
-            margin-bottom: 20px; /* Space between boxes */
-            padding-left: 10px; /* Left padding for each box */
-        }
+    .box h2 {
+      margin: 0;
+      color: #004aad;
+    }
 
-        a {
-            text-decoration: none; /* Remove underline from links */
-            color: #007bff; /* Link color */
-        }
+    .box p {
+      margin: 5px 0;
+    }
 
-        a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
-        .padding-lefta{
-            padding-left: 30px;
-          }
-          .padding-left {
-              padding-left: 60px;
-          }
-    </style>
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    small {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
+  <div class="container">
     <div class="text">
-        <div class="box">
-            <div class="box padding-lefta">
-            <a href="C:\Users\PMLS\Desktop\my_project\page1.html"><h2>Lubaba Khalid</h2></a>
-            <font size="2"><p>Lubaba Khalid is a student at the Department of Data Science, University of the Punjab (PU), Lahore, Pakistan.</p></font>
-            </div>
-        </div>
+      <div class="box">
+        <h2><a href="./page1.html">Lubaba Khalid</a></h2>
+        <small>Lubaba Khalid is a student at the Department of Data Science, University of the Punjab (PU), Lahore, Pakistan.</small>
+      </div>
 
-        <div class="box padding-left">
-        <div class="box">
+      <div class="box">
+        <p><strong>GitHub Profile:</strong></p>
+        <small><a href="https://github.com/LubabaKhalid" target="_blank">github.com/LubabaKhalid</a></small>
+      </div>
 
-            <font size="2"><p>GitHub Profile</p></font>
-            <font size="2"><p><a href="https://github.com/LubabaKhalid" target="_blank">GitHub Link</a></p></font>
-        </div>
+      <div class="box">
+        <p><strong>LinkedIn Profile:</strong></p>
+        <small><a href="https://www.linkedin.com/in/lubaba-khalid-a42147319/" target="_blank">linkedin.com/in/lubaba-khalid</a></small>
+      </div>
 
-        <div class="box">
-            <font size="2"><p>LinkedIn Profile</p></font>
-            <font size="2"><p><a href="https://www.linkedin.com/in/lubaba-khalid-a42147319/" target="_blank">LinkedIn Link</a></p></font>
-        </div>
+      <div class="box">
+        <p><strong><a href="./Courses.html">Courses</a></strong></p>
+        <small>Overview of courses taken.</small>
+      </div>
 
-        <div class="box">
-            <font size="2"><p><a href="C:\Users\PMLS\Desktop\my_project\Courses.html" target="_blank">Courses</a></p></font>
-            <font size="2"><p>Overview of courses taken.</p></font>
-        </div>
+      <div class="box">
+        <p><strong><a href="./Skills.html">Hobbies</a></strong></p>
+        <small>Overview of hobbies acquired.</small>
+      </div>
 
-        <div class="box">
-            <font size="2"><p><a href="C:\Users\PMLS\Desktop\my_project\Skills.html" target="_blank">Hobbies</a></p></font>
-            <font size="2"><p>Overview of hobbies acquired.</p></font>
-        </div>
+      <div class="box">
+        <p><strong><a href="./Languages.html">Languages</a></strong></p>
+        <small>Programming languages known.</small>
+      </div>
 
-        <div class="box">
-            <font size="2"><p><a href="C:\Users\PMLS\Desktop\my_project\Languages.html" target="_blank">Languages</a></p></font>
-            <font size="2"><p>Programming languages known.</p></font>
-        </div>
-
-        <div class="box">
-            <font size="2"><p><a href="C:\Users\PMLS\Desktop\my_project\Contact.html" target="_blank">Contact</a></p></font>
-            <font size="2"><p>Your message is important to me.</p></font>
-        </div>
-        </div>
+      <div class="box">
+        <p><strong><a href="./Contact.html">Contact</a></strong></p>
+        <small>Your message is important to me.</small>
+      </div>
     </div>
-    <img src="C:\Users\PMLS\Desktop\my_project\lubaba.jpeg" alt="Lubaba Khalid">
-</div>
 
+    <img src="./lubaba.jpeg" alt="Lubaba Khalid" />
+  </div>
 </body>
 </html>
