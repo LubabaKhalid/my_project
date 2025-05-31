@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4; /* Slightly lighter background for better contrast */
-            color: #333; /* Darker text color for better readability */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #dfe9f3 0%, #ffffff 100%);
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
 
-        /* Container Styling */
-        .container {
-            display: flex;
-            flex-direction: column; /* Stack the list vertically */
-            align-items: flex-start; 
-            justify-content: flex-start;
-            max-width: 1000px; /* Slightly narrower container for better alignment */
-            margin: 5px auto; /* Center container horizontally with spacing from top */
-            background-color: #ffffff; /* White background for the container */
-            padding: 5px 10px; /* More balanced padding */
-            border-radius: 12px; /* Slightly more rounded corners */
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a cleaner look */
-            padding-left:50px;
-        }
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px 60px;
+    }
 
-        /* Heading Styling */
-        h1 {
-            font-size: 30px; /* Size of the heading */
-            margin-bottom: 40px; /* Space below the heading */
-            text-align: lefta; /* Align the heading to the left */
-            padding-left:50px;
-        }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #2c3e50;
+      border-left: 5px solid #3498db;
+      padding-left: 15px;
+    }
 
-        /* Ordered List Styling */
-        ol {
-            list-style-position: inside; /* Adjusts list item style */
-            padding-left: 0; /* Remove default padding */
-        }
+    ol {
+      padding-left: 0;
+    }
 
-        li {
-            font-size: 18px; /* Font size for list items */
-            margin-bottom: 10px; /* Space between list items */
-            padding-left: 50px; /* Add some left padding */
-        }
-        /* Hover Effect for List Items */
-        li:hover {
-            background-color: #ecf0f1; /* Light background when hovering */
-            cursor: pointer; /* Change cursor to indicate interactivity */
-            transition: background-color 0.3s ease; /* Smooth transition */
-        }
+    li {
+      font-size: 18px;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      background: #f0f8ff;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      list-style: decimal inside;
+    }
 
-    </style>
+    li:hover {
+      background: #d6ecff;
+      transform: translateX(10px);
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 30px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      li {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-
+  <div class="container">
     <h1>Courses</h1>
     <ol>
-        <li>Programming Fundamentals</li>
-        <li>Introduction to Computer Science</li>
-        <li>Statistics for Data Science</li>
-        <li>Introduction to Data Science</li>
-        <li>Computer Organization and Assembly Language</li>
-        <li>Data Visualization</li>
-        <li>Artificial Intelligence</li>
-        <li>Data Warehouse</li>
-        <li>Operating Systems</li>
-        <li>Software Engineering</li>
+      <li>Programming Fundamentals</li>
+      <li>Introduction to Computer Science</li>
+      <li>Statistics for Data Science</li>
+      <li>Introduction to Data Science</li>
+      <li>Computer Organization and Assembly Language</li>
+      <li>Data Visualization</li>
+      <li>Artificial Intelligence</li>
+      <li>Data Warehouse</li>
+      <li>Operating Systems</li>
+      <li>Software Engineering</li>
     </ol>
-
+  </div>
 
 </body>
 </html>
