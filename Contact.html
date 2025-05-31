@@ -1,15 +1,98 @@
-<style>
-  
-</style>
-<form action="/login_page.php" method="post">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" placeholder="Enter your name"><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="message"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .contact-info p {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="/login_page.php" method="post">
+    <h2>Contact Us</h2>
     
-    <label for="message">Message:</label><br>
-    <input type="message" id="message" name="message" placeholder="Enter your message here"><br><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your name" required>
     
-    <input type="submit" value="send">
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message" placeholder="Enter your message here" required>
+    
+    <input type="submit" value="Send">
   </form>
 
-  <p>lubabalubaba815@gmail.com</p>
-  <p>03032220241</p>
+  <div class="contact-info">
+    <p>📧 lubabalubaba815@gmail.com</p>
+    <p>📞 0303-2220241</p>
+  </div>
+
+</body>
+</html>
